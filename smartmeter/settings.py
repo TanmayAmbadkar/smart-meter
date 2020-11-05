@@ -27,7 +27,7 @@ SECRET_KEY = '2hv)265(j85n$@yega2ul0=(7q1znon!v(7u7^*cidxf)yz6u9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://measuremains.herokuapp.com/', 'localhost', '127.0.0.1']
 
 
 # Application definition
