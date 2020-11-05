@@ -16,6 +16,7 @@ class MeterViewSet(viewsets.ModelViewSet):
 class ReadingViewSet(viewsets.ModelViewSet):
     queryset = Reading.objects.all()
     serializer_class = ReadingSerializer
+    http_method_names = ['get', 'head', ]
 
 class AddReading(APIView):
 
