@@ -18,7 +18,7 @@ import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-FRONTEND_DIR = BASE_DIR / 'frontend/templates/frontend'
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'meter',
-    'frontend'
 ]
 
 MIDDLEWARE = [
@@ -64,7 +63,7 @@ ROOT_URLCONF = 'smartmeter.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [FRONTEND_DIR],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
